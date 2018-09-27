@@ -18,15 +18,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:inputType="number"
         android:hint="Number of People"
         android:id="@+id/main_edit_no_of_people"/>
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Cost of the Bill"
-        android:id="@+id/main_edit_bill_cost"/>
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:paddingRight="5dp"
+            android:text="$" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cost of the Bill"
+            android:inputType="numberDecimal"
+            android:id="@+id/main_edit_bill_cost"/>
+
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
